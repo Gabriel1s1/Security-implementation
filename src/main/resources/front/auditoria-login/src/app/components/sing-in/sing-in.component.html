@@ -1,0 +1,27 @@
+<h2>Sign in</h2>
+<div class="container" [formGroup]="form">
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Login</mat-label>
+            <input matInput formControlName="login">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password">
+          </mat-form-field>
+        <!-- <label for="nome">First Name</label>
+        <input formControlName="firstName" type="text" placeholder="First Name"> -->
+        <button class="btn send" (click)="sendPeople()">sing in</button>
+      </div>
+</div>
